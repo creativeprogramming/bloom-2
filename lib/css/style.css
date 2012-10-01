@@ -1,0 +1,99 @@
+/* reset */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+	display: block;
+}
+audio,
+canvas,
+video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+[hidden] {
+	display: none;
+}
+html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+html,
+button,
+input,
+select,
+textarea {
+	font-family: sans-serif;
+}
+/*Reset Safari User Agent Styles*/
+* {-webkit-marginj-start: 0px;}
+body {
+	margin: 0;
+	font-size: 1em;
+	line-height: 1.4;
+}
+.ir {
+	overflow: hidden;
+	font-size: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	color: transparent;
+}
+::-moz-selection {
+	text-shadow: none;
+}
+::selection {
+	text-shadow: none;
+}
+a:focus {
+	outline: thin dotted;
+}
+a:hover,
+a:active {
+	outline: 0;
+}
+b,
+strong {
+	font-weight: bold;
+}
+ul,
+ol,
+dd {
+	margin: 0;
+	padding: 0;
+}
+nav ul,
+nav ol {
+	list-style: none;
+	list-style-image: none;
+}
+.wrap {
+	margin: 5%;
+}
+.main-wrap ol li {
+	margin-left: 20px;
+	color: #bbb;
+	font-size: 18px;
+}
+.main-wrap ol li a {
+	padding: 15px;
+	display: block;
+	background: #eee;
+	margin: 1%;
+	text-decoration: none;
+	color: #b33;
+	width: 50%;
+}
+.main-wrap ol li a:hover {
+	background: #e9e9e9;
+	text-decoration: underline;
+}
