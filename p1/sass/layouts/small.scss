@@ -1,0 +1,76 @@
+
+
+/* ------ Containers */
+body {
+	font-size: 87%;
+}
+.wrap {
+	@include clearfix;
+	margin: 0 5%;
+	padding: 10px 0;
+	position: relative;
+}
+
+/* ------ Header */
+.site-header {
+	background: #eee;
+}
+.site-logo {
+	background: url('/img/logo.png') no-repeat left center;
+	width: 125px;
+	height: 40px;
+	display: block;
+	position: relative;
+	z-index:2;
+	background-size: 125px;
+}
+/* ------ Navigation */
+.site-nav {
+	@include clearfix;
+}
+/* ------ Search */
+.site-search {
+	width: 100%;
+	@include clearfix;
+	display: block;
+} 
+
+/* ------ Form Elements */
+form {
+	margin: 1em 0;
+	@include clearfix;		
+	
+	input[type="text"] {
+		padding: 1em;
+		width: 75%;
+		float: left;
+		border: 1px solid #aaa;
+		@include border-box;			
+	}
+	button[type="submit"] {
+		width: 25%;
+		float: right;
+		padding: 1.05em;
+		border: none;
+		background: #bbb;
+		@include border-box;
+	}
+}
+
+/* ------ Footer */
+.site-footer {
+	background: #f1f1f1;
+	@include clearfix;	
+}
+.footer-links-wrap {	
+	ul {
+		
+		li {
+			margin: 2px 0;
+			a {	
+				padding: 3px 0;
+				display: block;
+			}
+		}
+	}
+}

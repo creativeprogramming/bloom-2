@@ -4,41 +4,38 @@
 <head id="head">
 	<meta charset="utf-8">
 
-	<title>Bloom</title>
+	<title>Iterative Prototype Staging</title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/lib/css/style.css">
+	<link rel="stylesheet" href="/p2/css/style.css">
+	<script src="/lib/js/ejs.js"></script>
 </head>
 <body>	
 	<!-- Header Start -->
 	<header class="site-header" id="header">
 		<script>
-			new EJS({url: '/partials/header.ejs'}).update('header', {"title":"Iterative Prototype Staging"});	
+			new EJS({url: '/partials/header.ejs'}).update('header', {"title":"Iterative Prototype Staging", "version":"p2"});	
 		</script>
 	</header>
 	<!-- Header End -->
+	
 	<!-- Primary Start -->
 	<div role="main" id="content">
-		<div class="wrap main-wrap">
-			<ol>
-				<li><a href="/p1">Prototype version 1</a></li>
-				<li><a href="/p2">Prototype version 2</a></li>	
-			</ol>		
 
-		</div>
 	</div>
 	<!-- Primary End -->
 
 	<!-- Footer Start -->
 	<footer class="site-footer" id="footer" role="site-info">	
 		<script>
-			new EJS({url: '/partials/footer.ejs'}).update('footer', {"title":"Iterative Prototype Staging"});
+			new EJS({url: '/partials/footer.ejs'}).update('footer', {"title":"Iterative Prototype Staging", "version":"p2"});
 		</script>	
 	</footer>
 	<!-- Footer End -->
-
+	<script src="/js/lib/jRespond-0.7.2.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="/lib/js/jquery-1.7.2.min.js"><\/script>')</script>
-	<script src="/lib/js/bloom_script.js"></script>
+	<!-- <script src="js/plugins.min.js"></script> -->
+	<script src="js/script-min.js"></script>
 </body>
 </html>
