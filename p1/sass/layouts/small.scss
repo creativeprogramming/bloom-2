@@ -27,6 +27,13 @@ body {
 /* ------ Navigation */
 .site-nav {
 	@include clearfix;
+	
+		li {
+		
+		&.current {
+			font-weight: 900;
+		}
+	}
 }
 /* ------ Search */
 .site-search {
@@ -60,6 +67,7 @@ form {
 /* ------ Footer */
 .site-footer {
 	background: #f1f1f1;
+	border-top: 1px solid #ddd;
 	@include clearfix;	
 }
 .footer-links-wrap {	

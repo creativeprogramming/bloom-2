@@ -27,6 +27,13 @@ body {
 /* ------ Navigation */
 .site-nav {
 	@include clearfix;
+	
+	li {
+		
+		&.current {
+			font-weight: 900;
+		}
+	}
 }
 /* ------ Search */
 .site-search {

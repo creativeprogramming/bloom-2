@@ -7,6 +7,9 @@
 	<title>Iterative Prototype Staging</title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		var details = {"title":"Iterative Prototype Staging", "version":"p2", "nav":"nav-1"};
+	</script>
 	<link rel="stylesheet" href="/p2/css/style.css">
 	<script src="/lib/js/ejs.js"></script>
 </head>
@@ -14,7 +17,7 @@
 	<!-- Header Start -->
 	<header class="site-header" id="header">
 		<script>
-			new EJS({url: '/partials/header.ejs'}).update('header', {"title":"Iterative Prototype Staging", "version":"p2"});	
+			new EJS({url: '/partials/header.ejs'}).update('header', details);	
 		</script>
 	</header>
 	<!-- Header End -->
@@ -28,7 +31,7 @@
 	<!-- Footer Start -->
 	<footer class="site-footer" id="footer" role="site-info">	
 		<script>
-			new EJS({url: '/partials/footer.ejs'}).update('footer', {"title":"Iterative Prototype Staging", "version":"p2"});
+			new EJS({url: '/partials/footer.ejs'}).update('footer', details);
 		</script>	
 	</footer>
 	<!-- Footer End -->
