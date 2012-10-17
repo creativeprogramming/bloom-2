@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head id="head">
+	<meta charset="utf-8">
+
+	<title>Iterative Prototype Staging</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		var details = {"title":"Iterative Prototype Staging", "version":"p1", "nav":"nav-3"};
+	</script>	
+		<link rel="stylesheet" href="/p1/css/style.css">
+		<script src="/lib/js/ejs.js"></script>
+	</head>
+	<body>	
+		<!-- Header Start -->
+		<header class="site-header" id="header">
+			<script>
+				new EJS({url: '/partials/header.ejs'}).update('header', details);	
+			</script>
+		</header>
+		<!-- Header End -->
+
+		<!-- Primary Start -->
+		<div role="main" id="content">
+			<div class="wrap main-wrap">
+				<header>
+					<h1>H1 Page Title</h1>
+					<h2>Sub Heading</h2>
+				</header>
+									
+				<section class="sample-page-section">
+					<h2>H2 Heading</h2>	
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat hendrerit mi eget iaculis. Nullam ultrices laoreet tortor non iaculis. Maecenas ligula sapien, pharetra at ornare in, facilisis ut urna. Nullam at nunc scelerisque nisi ornare consequat. Nullam malesuada tellus eget arcu iaculis eu porta erat accumsan.</p>
+	
+					<p><strong>Strong text</strong> regular text.</p>
+	
+					<p class="alert-message">This is an alert message.</p>	
+		
+					<h3>H3 Heading</h3>		
+					<p>
+						<label for="form-app-text">Text</label>
+						<input type="text" name="app-text" id="form-app-text" />
+						<span class="hint">Hint text</span>
+					</p>
+					<p class="error-background">
+						<label for="form-app-address-1">Error Field</label>
+						<input class="error" type="text" name="app-address-1" id="form-app-address-1" />
+						<span class="error"><strong>Error:</strong> Field was empty.</span>
+					</p>
+	
+					<p>
+						<button class="btn action" type="submit">Action Button</button>
+					</p>
+	
+					<p><a href="#" class="button action with-icon"><span class="text">Add Button</span><span class="icon ss-plus"></span></a></p>
+										
+					<p><input type="submit" value="Accept Button" class="accept" /></p>				
+	
+					<fieldset name="app-input">
+						<p><input type="radio" name="app-input" data-identifier="status-1" class="radio-select-reveal" id="app-1" value="yes" /><label for="app-1">Radio button 1.</label></p>
+						<p><input type="radio" name="app-input" data-identifier="status-2" class="radio-select-reveal" id="app-2" value="yes" /><label for="app-2">Radio button 2.</label></p>
+					</fieldset>
+	
+					<p>
+						<label for="form-app-term-start">Form label</label>
+						<select name="app-term-start" id="form-app-term-start">
+							<option disabled selected>Select...</option>
+							<option value="02-2013">Spring (February) 2013</option>
+							<option value="05-2013">Summer (May) 2013</option>
+							<option value="08-2013">Fall (August) 2013</option>
+							<option value="02-2014">Spring (February) 2014</option>
+							<option value="05-2014">Summer (May) 2014</option>
+							<option value="08-2014">Fall (August) 2014</option>
+						</select>
+					</p>
+	
+				</section>
+			</div>
+	<!-- Primary End -->
+
+	<!-- Footer Start -->
+	<footer class="site-footer" id="footer" role="site-info">	
+		<script>
+			new EJS({url: '/partials/footer.ejs'}).update('footer', details);
+		</script>	
+	</footer>
+	<!-- Footer End -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="js/plugins.min.js"></script>
+	<script src="js/script.min.js"></script>
+</body>
+</html>	
