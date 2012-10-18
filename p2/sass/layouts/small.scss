@@ -42,28 +42,22 @@ body {
 	display: block;
 } 
 
-/* ------ Form Elements */
-form {
-	margin: 1em 0;
-	@include clearfix;		
+/* ------ Site Search */
+.site-search {
+	form {
+		margin: 1em 0;
+		@include clearfix;		
 	
-	input[type="text"] {
-		padding: 1em;
-		width: 75%;
-		float: left;
-		border: 1px solid #aaa;
-		@include border-box;			
-	}
-	button[type="submit"] {
-		width: 25%;
-		float: right;
-		padding: 1.05em;
-		border: none;
-		background: #bbb;
-		@include border-box;
+		input[type="text"] {
+			float: left;
+			width: 75%;
+		}
+		button[type="submit"] {
+			float: right;
+			width: 25%;
+		}
 	}
 }
-
 /* ------ Footer */
 .site-footer {
 	background: #f1f1f1;

@@ -1,14 +1,7 @@
-$link: #1daeef;
 
-a {
-	color: $link;
-	text-decoration: none;
-	
-	&:hover {
-		color: darken($link, 15%);
-		text-decoration: underline;		
-	}
-}
+/* Variables */
+$link: #1daeef;
+$form-padding: 20px;
 
 /* Mixins */
 @mixin clearfix {
@@ -58,3 +51,44 @@ a {
 	-webkit-transition: none;
 	transition: none;
 }
+
+/* Common Elements */
+a {
+	color: $link;
+	text-decoration: none;
+	
+	&:hover {
+		color: darken($link, 15%);
+		text-decoration: underline;		
+	}
+}
+
+/* ------ Form Elements */
+form {
+	@include clearfix;		
+	
+	input[type="text"],
+	input[type="email"],
+	input[type="search"],
+	input[type="tel"] {
+		@include border-box;	
+		@include box-shadow ($x-pos: 1px, $y-pos: 1px, $blur: 3px, $color: rgba(0,0,0,.05), $inset: true);		
+		padding: $form-padding;
+		border: 1px solid #ddd;	
+		display: block;	
+		
+		&.error {
+			border: 1px solid red;
+		}
+	}
+	button[type="submit"] {
+		@include border-box;
+		padding: $form-padding;
+		border: none;
+	}
+	input[type="radio"] {
+		display: inline;
+		margin-right: 5px;
+	}
+}
+

@@ -8,9 +8,9 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>
-		var details = {"title":"Iterative Prototype Staging", "version":"p1", "nav":"nav-3"};
+		var details = {"title":"Iterative Prototype Staging", "version":"p2", "nav":"nav-3"};
 	</script>	
-		<link rel="stylesheet" href="/p1/css/style.css">
+		<link rel="stylesheet" href="/p2/css/style.css">
 		<script src="/lib/js/ejs.js"></script>
 	</head>
 	<body>	
@@ -38,44 +38,44 @@
 	
 					<p class="alert-message">This is an alert message.</p>	
 		
-					<h3>H3 Heading</h3>		
-					<p>
-						<label for="form-app-text">Text</label>
-						<input type="text" name="app-text" id="form-app-text" />
-						<span class="hint">Hint text</span>
-					</p>
-					<p class="error-background">
-						<label for="form-app-address-1">Error Field</label>
-						<input class="error" type="text" name="app-address-1" id="form-app-address-1" />
-						<span class="error"><strong>Error:</strong> Field was empty.</span>
-					</p>
+					<h3>H3 Heading</h3>	
+					
+					<form>	
+						<p>
+							<label for="form-app-text">Text</label>
+							<input type="text" />
+						</p>
+						<p class="error">
+							<label for="form-app-address-1">Error Field</label>
+							<input class="error" type="text" />
+						</p>
 	
-					<p>
-						<button class="btn action" type="submit">Action Button</button>
-					</p>
+						<p>
+							<button class="btn action" type="submit">Action Button</button>
+						</p>
 	
-					<p><a href="#" class="button action with-icon"><span class="text">Add Button</span><span class="icon ss-plus"></span></a></p>
+						<p><a href="#" class="button action with-icon"><span class="text">Add Button</span><span class="icon ss-plus"></span></a></p>
 										
-					<p><input type="submit" value="Accept Button" class="accept" /></p>				
+						<p><input type="submit" value="Accept Button" class="accept" /></p>				
 	
-					<fieldset name="app-input">
-						<p><input type="radio" name="app-input" data-identifier="status-1" class="radio-select-reveal" id="app-1" value="yes" /><label for="app-1">Radio button 1.</label></p>
-						<p><input type="radio" name="app-input" data-identifier="status-2" class="radio-select-reveal" id="app-2" value="yes" /><label for="app-2">Radio button 2.</label></p>
-					</fieldset>
+						<fieldset name="app-input">
+							<p><input type="radio" name="app-input" data-identifier="status-1" class="radio-select-reveal" id="app-1" value="yes" /><label for="app-1">Radio button 1.</label></p>
+							<p><input type="radio" name="app-input" data-identifier="status-2" class="radio-select-reveal" id="app-2" value="yes" /><label for="app-2">Radio button 2.</label></p>
+						</fieldset>
 	
-					<p>
-						<label for="form-app-term-start">Form label</label>
-						<select name="app-term-start" id="form-app-term-start">
-							<option disabled selected>Select...</option>
-							<option value="02-2013">Spring (February) 2013</option>
-							<option value="05-2013">Summer (May) 2013</option>
-							<option value="08-2013">Fall (August) 2013</option>
-							<option value="02-2014">Spring (February) 2014</option>
-							<option value="05-2014">Summer (May) 2014</option>
-							<option value="08-2014">Fall (August) 2014</option>
-						</select>
-					</p>
-	
+						<p>
+							<label for="form-app-term-start">Form label</label>
+							<select name="app-term-start" id="form-app-term-start">
+								<option disabled selected>Select...</option>
+								<option value="02-2013">Spring (February) 2013</option>
+								<option value="05-2013">Summer (May) 2013</option>
+								<option value="08-2013">Fall (August) 2013</option>
+								<option value="02-2014">Spring (February) 2014</option>
+								<option value="05-2014">Summer (May) 2014</option>
+								<option value="08-2014">Fall (August) 2014</option>
+							</select>
+						</p>
+					</form>
 				</section>
 			</div>
 	<!-- Primary End -->
@@ -91,4 +91,4 @@
 	<script src="js/plugins.min.js"></script>
 	<script src="js/script.min.js"></script>
 </body>
-</html>	
+</html>
