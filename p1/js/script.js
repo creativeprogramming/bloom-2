@@ -18,7 +18,9 @@ jQuery(document).ready(function($) {
 	$(window).on('resize', Home.resizer);
 });
 
-
+// Update global page elements
+new EJS({url: '/partials/header.ejs'}).update('header', details);	
+new EJS({url: '/partials/footer.ejs'}).update('footer', details);
 
 // raising the mobile toolbar --- http://24ways.org/2011/raising-the-bar-on-mobile ---
 (function( win ){
