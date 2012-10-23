@@ -1,9 +1,14 @@
 
-/* Variables */
+/* ------ Variables */
 $link: #1daeef;
 $form-padding: 20px;
+$grid-column: 8.33333333333333%; /* 12col */
+$text-base: #666;
 
-/* Mixins */
+/* ------ Mixins */
+@mixin grid($span) {
+  width: ($grid-column * $span);
+}
 @mixin clearfix {
 	&:before, &:after {
 		content:"";
@@ -18,7 +23,6 @@ $form-padding: 20px;
 		zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 	}
 }
-
 @mixin box-shadow($x-pos: 0, $y-pos: 1px, $blur: 1px, $color: rgba(0,0,0,.15), $inset: false) {
 	@if $inset {
 		-moz-box-shadow: $x-pos $y-pos $blur $color inset;
@@ -30,13 +34,11 @@ $form-padding: 20px;
 		box-shadow: $x-pos $y-pos $blur $color;
 	}
 }
-
 @mixin border-box {
 	-moz-box-sizing: border-box; 
 	-webkit-box-sizing: border-box; 
 	box-sizing: border-box;
 }
-
 @mixin transition ($properties: all, $duration: .25s, $ease: ease-in-out) {
 	-o-transition: $properties $duration $ease;
 	-moz-transition: $properties $duration $ease;
@@ -44,7 +46,6 @@ $form-padding: 20px;
 	-ms-transition: $properties $duration $ease;
 	transition: $properties $duration $ease;
 }
-
 @mixin no-transition () {
 	-o-transition: none;
 	-moz-transition: none;
@@ -52,7 +53,7 @@ $form-padding: 20px;
 	transition: none;
 }
 
-/* Common Elements */
+/* ------ Common Elements */
 a {
 	color: $link;
 	text-decoration: none;
